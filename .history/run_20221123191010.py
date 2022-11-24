@@ -1,6 +1,5 @@
 import pandas as pd
 import spacy
-import numpy as np
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -12,4 +11,4 @@ for x, y in zip(test["tweet"], test["label"]):
         accurate.append(1)
     else:
         accurate.append(0)
-print(np.count_nonzero(accurate))
+print(accurate)

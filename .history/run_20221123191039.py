@@ -12,4 +12,4 @@ for x, y in zip(test["tweet"], test["label"]):
         accurate.append(1)
     else:
         accurate.append(0)
-print(np.count_nonzero(accurate))
+print(accurate)
